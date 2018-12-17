@@ -1,9 +1,9 @@
 {% load static %}
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="{% url 'index' %}">
-        <img src="{% static 'img/logo.png' %}" class="logo" alt="">
+      <img src="{% static 'img/logo1.png' %}" alt="BT Real Estate" >
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
         <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
               class="nav-item mr-3"
             {% endif %}
           >
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-link" href="{% url 'about' %}">About us</a>
           </li>
           <li
             {% if 'listings' in request.path %}
@@ -35,7 +35,7 @@
               class="nav-item mr-3"
             {% endif %}
           >
-            <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
+            <a class="nav-link" href="{% url 'listings' %}">Our Listings</a>
           </li>
         </ul>
 
@@ -48,9 +48,10 @@
               class="nav-item mr-3"
             {% endif %}
             >
-              <a class="nav-link" href="{% url 'dashboard' %}">
-               Welcome {{ user.username }} (Dashboard)</a>
+              <a class="nav-link" href="#">
+               Welcome {{ user.username }}</a>
             </li>
+            <li class="nav-item mr-1"><a class="nav-link" href="{% url 'dashboard' %}"> Dashboard</a></li>
             <li class="nav-item mr-3">
               <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
                 <i class="fas fa-sign-out-alt"></i> Logout
