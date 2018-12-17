@@ -6,22 +6,22 @@
        - install requirements.txt <br>
         make sure you are its then type <br>
         
-        '''
-        <b>pip install -r requirements.txt</b>
-        '''
+        
+       pip install -r requirements.txt
+        
 
   <h1><b>Installation</b></h1>
-      To install this clone the repo or download the zip file:
+      To install this clone the repo or download the zip file,
       once installed type 
   
-    '''
-    <b>python manage.py makemigrations</b>
-    '''
+    
+    python manage.py makemigrations
+    
   
   to makemigrations and
   
-    '''
-    <b>python manage.py migrate</b> 
-    '''
+    
+    python manage.py migrate 
+    
   
    to migrate the database 
